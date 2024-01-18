@@ -72,7 +72,7 @@ docker build -t "image name" .
 ```
 
 ```bash
-docker run -p 3000:3000 --name "image name" "container name"
+docker run -p 3000:3000 --name "container name" "image name"
 ```
 
 ## Docker compose
