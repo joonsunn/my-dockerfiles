@@ -43,7 +43,7 @@ Trailing ```.``` is actually ```destination directory```, but for simplicity's s
 ### Step 4: create docker container from image
 
 ```bash
-docker run -p 3000:3000 --name "image name" "container name"
+docker run -p 3000:3000 --name "container name" "image name"
 ```
 
 If ```--name``` flag not run to give container name, docker will give random name
@@ -63,6 +63,7 @@ docker stop "container name"
 No shortcut. Need to delete old container and build from latest image. This means need to run
 
 ```bash
+docker ps -a
 docker rm "container name"
 ```
 
