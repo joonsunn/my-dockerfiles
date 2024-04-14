@@ -1,0 +1,10 @@
+services:
+  chattiest-user:
+    environment:
+      - NODE_ENV=production
+    build:
+      context: .
+      dockerfile: dockerfile.prod
+    container_name: chattiest-user
+    ports:
+      - "3000:3000"
